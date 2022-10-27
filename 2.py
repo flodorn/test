@@ -7,6 +7,8 @@ with serial.Serial('/dev/ttyUSB0', 9600, timeout=10) as ser:
 	x = ser.read()          # read one byte
 	s = ser.read(10)        # read up to ten bytes (timeout)
 	line = ser.readline()   # read a '\n' terminated line
+	lines = ser.readlines(10)   # read multiple '\n' terminated lines (timeout)
 	print(x)
 	print(s)
 	print(line)
+	print(lines)
