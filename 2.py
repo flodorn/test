@@ -1,12 +1,12 @@
 import serial
 
-with serial.Serial(port='/dev/ttyUSB0', baudrate=9600, bytesize=serial.EIGHTBITS, timeout=5) as ser:
+with serial.Serial(port='/dev/ttyUSB0', baudrate=9600, timeout=5) as ser:
 	
 	f = open("log.txt", "a")
 	
 	print(ser.name)         # check which port was really used
 	x = ser.read()          # read one byte
-	s = ser.read(20)        # read up to ten bytes (timeout)
+	s = ser.read(10)        # read up to ten bytes (timeout)
 	line = ser.readline(100)   # read a '\n' terminated line (timeout)
 	#lines = ser.readlines(5)   # read multiple '\n' terminated lines (timeout)
 	
