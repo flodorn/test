@@ -13,7 +13,7 @@ with serial.Serial(port='/dev/ttyUSB0', baudrate=9600, bytesize=serial.EIGHTBITS
 	print(x)
 	f.write(str(x)+"\n")
 	print(s)
-	f.write(str(s)\n)
+	f.write(str(s))
 	print(line)
 	f.write(str(line))
 	#print(lines)
