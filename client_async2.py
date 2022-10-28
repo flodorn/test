@@ -1,7 +1,7 @@
 from pymodbus.client import AsyncModbusSerialClient
 
 async def run():
-    client = AsyncModbusSerialClient("/dev/ttyUSB0")
+    client = AsyncModbusSerialClient("/dev/ttyUSB0", baudrate: int = 19200)
     
     
 	
