@@ -268,5 +268,5 @@ if __name__ == "__main__":
     )
     
     testclient = setup_async_client(cmd_args)
-    asyncio.run(run_async_client(testclient, modbus_calls=run_async_calls))
+    #asyncio.run(run_async_client(testclient, modbus_calls=run_async_calls))
    
