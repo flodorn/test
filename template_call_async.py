@@ -256,7 +256,7 @@ async def run_async_calls(client):
     #await _handle_discrete_input(client)
     #await _handle_holding_registers(client)
     #await _handle_input_registers(client)
-    #await _execute_information_requests(client)
+    await _execute_information_requests(client)
     #await _execute_diagnostic_requests(client)
 
 
