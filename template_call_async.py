@@ -249,7 +249,7 @@ async def _execute_diagnostic_requests(client):
 # ------------------------
 
 
-async def run_async_calls(client):
+#async def run_async_calls(client):
     """Demonstrate basic read/write calls."""
     #await async_template_call(client)
     #await _handle_coils(client)
