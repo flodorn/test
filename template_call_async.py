@@ -251,7 +251,7 @@ async def _execute_diagnostic_requests(client):
 
 async def run_async_calls(client):
     """Demonstrate basic read/write calls."""
-    await async_template_call(client)
+    #await async_template_call(client)
     #await _handle_coils(client)
     #await _handle_discrete_input(client)
     #await _handle_holding_registers(client)
@@ -268,5 +268,5 @@ if __name__ == "__main__":
     )
     
     testclient = setup_async_client(cmd_args)
-    #asyncio.run(run_async_client(testclient, modbus_calls=run_async_calls))
+    asyncio.run(run_async_client(testclient, modbus_calls=run_async_calls))
    
