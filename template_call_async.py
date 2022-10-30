@@ -180,27 +180,27 @@ async def _execute_information_requests(client):
         await client.execute(req_mei.ReadDeviceInformationRequest(unit=SLAVE))
     )
     assert rr.information[0] == b"Pymodbus"
-
+    _logger.info("### Running information requests.2")
     rr = _check_call(await client.execute(req_other.ReportSlaveIdRequest(unit=SLAVE)))
     assert rr.status
-
+    _logger.info("### Running information requests.3")
     rr = _check_call(
         await client.execute(req_other.ReadExceptionStatusRequest(unit=SLAVE))
     )
     assert not rr.status
-
+    _logger.info("### Running information requests.4")
     rr = _check_call(
         await client.execute(req_other.GetCommEventCounterRequest(unit=SLAVE))
     )
     assert rr.status and not rr.count
-
+    _logger.info("### Running information requests.5")
     rr = _check_call(await client.execute(req_other.GetCommEventLogRequest(unit=SLAVE)))
     assert rr.status and not (rr.event_count + rr.message_count + len(rr.events))
-
+    _logger.info("### Running information requests.6")
 
 async def _execute_diagnostic_requests(client):
     """Execute extended diagnostic requests."""
-    _logger.info("### Running diagnostic requests.")
+    _logger.info("### Running diagnostic requests.7")
     rr = _check_call(await client.execute(req_diag.ReturnQueryDataRequest(unit=SLAVE)))
     assert not rr.message[0]
 
