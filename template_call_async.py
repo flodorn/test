@@ -251,13 +251,13 @@ async def _execute_diagnostic_requests(client):
 
 async def run_async_calls(client):
     """Demonstrate basic read/write calls."""
-    await async_template_call(client)
-    await _handle_coils(client)
-    await _handle_discrete_input(client)
-    await _handle_holding_registers(client)
-    await _handle_input_registers(client)
-    await _execute_information_requests(client)
-    await _execute_diagnostic_requests(client)
+    #await async_template_call(client)
+    #await _handle_coils(client)
+    #await _handle_discrete_input(client)
+    #await _handle_holding_registers(client)
+    #await _handle_input_registers(client)
+    #await _execute_information_requests(client)
+    #await _execute_diagnostic_requests(client)
 
 
 if __name__ == "__main__":
