@@ -23,19 +23,24 @@ from pymodbus.server import (
     StartAsyncUdpServer,
 )
 from pymodbus.version import version
+import codecs
 
+hex = codecs.encode(b"c", "hex")
 
 _logger = logging.getLogger()
 
 
-data="S"
 
-result = data.encode()
+
+result = "S".encode()
 dataExport = struct.pack(">s", result)
 
 #dataExport = struct.pack(">c", result)
 
 #b = bytes(data, 'utf-8')
 
+#hex(ord("c"))
+
 print(type(dataExport))
-print(dataExport)
+print(result)
+print(hex)
