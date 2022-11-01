@@ -38,7 +38,7 @@ result = "S".encode()
 
 #dataExport = struct.pack(">c", result)
 
-b = bytes("9",'utf-8')
+b = bytes(9,'utf-8')
 
 
 
