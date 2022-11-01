@@ -31,17 +31,19 @@ _logger = logging.getLogger()
 
 
 #hex = hex(ord("S"))
-
-result = "S".encode()
+char = "S"
+result = char.encode()
 
 #dataExport = struct.pack("c", hex)
 
-dataExport = struct.pack("<c", result)
+dataExport = struct.pack(">c", result)
 
 b = bytes("S",'utf-8')
 
 
-#print(type(hex))
+print(type(char))
+print(type(result))
+print(type(dataExport))
 
 print(result)
 print(b)
