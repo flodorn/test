@@ -44,6 +44,6 @@ hex = hex(ord("S"))
 
 #print(type(dataExport))
 #print(result)
-print(dataExport)
+#print(dataExport)
 print(hex)
 
