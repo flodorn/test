@@ -45,3 +45,5 @@ dataExport = struct.pack(">ss", hex)
 #print(type(dataExport))
 #print(result)
 print(dataExport)
+print(hex)
+
