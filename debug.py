@@ -34,10 +34,12 @@ _logger = logging.getLogger()
 char = "SI"
 #result = char.encode()
 
+#"I%ds" % (len(s),)
+
 #dataExport = struct.pack("c", hex)
 
 if (isinstance(char, str)):
-    dataExport = struct.pack(">2s", char.encode())
+    dataExport = struct.pack(">%s" % (len(char),), char.encode())
 else:
     dataExport = struct.pack(">B", char)
 
