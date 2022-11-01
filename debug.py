@@ -30,11 +30,11 @@ import codecs
 _logger = logging.getLogger()
 
 
-hex = hex(ord("S"))
+#hex = hex(ord("S"))
 
-#result = "S".encode()
+result = "S".encode()
 
-dataExport = struct.pack("c", hex)
+#dataExport = struct.pack("c", hex)
 
 #dataExport = struct.pack(">c", result)
 
@@ -43,8 +43,8 @@ dataExport = struct.pack("c", hex)
 
 
 print(type(hex))
-#print(result)
+print(result)
 
-print(dataExport)
-print(hex)
+#print(dataExport)
+#print(hex)
 
