@@ -25,15 +25,16 @@ from pymodbus.server import (
 from pymodbus.version import version
 import codecs
 
-hex = codecs.encode(b"c", "hex")
+hex = codecs.encode(b"S", "hex")
 
 _logger = logging.getLogger()
 
 
 
 
-result = "S".encode()
-dataExport = struct.pack(">s", result)
+#result = "S".encode()
+
+dataExport = struct.pack(">B", hex)
 
 #dataExport = struct.pack(">c", result)
 
@@ -41,6 +42,6 @@ dataExport = struct.pack(">s", result)
 
 #hex(ord("c"))
 
-print(type(dataExport))
-print(result)
-print(hex)
+#print(type(dataExport))
+#print(result)
+print(dataExport)
