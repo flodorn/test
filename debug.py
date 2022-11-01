@@ -28,7 +28,7 @@ from pymodbus.version import version
 _logger = logging.getLogger()
 
 
-data="SI"
+data="S"
 
 result = data.encode('ascii')
 #dataExport = struct.pack(">B", data)
