@@ -28,11 +28,11 @@ from pymodbus.version import version
 _logger = logging.getLogger()
 
 
-data="S"
+data=1
 
 result = data.encode(encoding='ascii')
 #result = struct.pack(">B", data)
 
-dataExport = struct.pack(">s", result)
+dataExport = struct.pack("B", result)
 
 print(dataExport)
