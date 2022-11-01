@@ -34,7 +34,7 @@ _logger = logging.getLogger()
 
 #result = "S".encode()
 
-dataExport = struct.pack(">s", hex)
+dataExport = struct.pack(">ss", hex)
 
 #dataExport = struct.pack(">c", result)
 
