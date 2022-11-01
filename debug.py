@@ -36,7 +36,8 @@ result = char.encode()
 
 #dataExport = struct.pack("c", hex)
 
-dataExport = struct.pack(">c", result)
+if (isinstance(char, str)):
+    dataExport = struct.pack(">c", char.encode())
 
 b = bytes("S",'utf-8')
 
