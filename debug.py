@@ -37,7 +37,7 @@ char = "SI"
 #dataExport = struct.pack("c", hex)
 
 if (isinstance(char, str)):
-    dataExport = struct.pack(">s", char.encode())
+    dataExport = struct.pack(">2c", char.encode())
 else:
     dataExport = struct.pack(">B", char)
 
