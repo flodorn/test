@@ -30,9 +30,9 @@ _logger = logging.getLogger()
 
 data="S"
 
-#result = data.encode(encoding='UTF-8')
+result = data.encode(encoding='ascii')
 #result = struct.pack(">B", data)
 
-dataExport = struct.pack(">s", data)
+dataExport = struct.pack(">s", result)
 
 print(dataExport)
