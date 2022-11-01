@@ -35,4 +35,6 @@ result = data.encode('ascii')
 
 dataExport = struct.pack(">c", result)
 
-print(dataExport)
+b = bytes(data, 'utf-8')
+
+print(b)
