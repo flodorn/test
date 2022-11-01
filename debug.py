@@ -38,7 +38,7 @@ char = "S"
 
 if (isinstance(char, str)):
     dataExport = struct.pack(">c", char.encode())
-else
+else:
     dataExport = struct.pack(">B", char)
 
 #b = bytes("S",'utf-8')
