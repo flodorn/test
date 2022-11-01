@@ -40,9 +40,9 @@ hex = hex(ord("S"))
 
 #b = bytes(data, 'utf-8')
 
-#hex(ord("c"))
 
-#print(type(dataExport))
+
+print(type(hex))
 #print(result)
 #print(dataExport)
 print(hex)
