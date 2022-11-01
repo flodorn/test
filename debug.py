@@ -33,6 +33,6 @@ data="S"
 result = data.encode(encoding='UTF-8')
 #result = struct.pack(">B", data)
 
-dataExport = struct.pack(">B", result)
+dataExport = struct.pack(">s", result)
 
 print(dataExport)
