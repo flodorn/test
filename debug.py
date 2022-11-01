@@ -32,13 +32,13 @@ _logger = logging.getLogger()
 
 #hex = hex(ord("S"))
 
-result = "S".encode()
+result = 5.encode()
 
 #dataExport = struct.pack("c", hex)
 
 #dataExport = struct.pack(">c", result)
 
-b = bytes(9,'utf-8')
+b = bytes("S",'utf-8')
 
 
 
