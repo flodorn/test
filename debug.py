@@ -32,3 +32,5 @@ data="S"
 
 
 dataExport = data.encode()
+
+print(dataExport)
