@@ -32,14 +32,13 @@ _logger = logging.getLogger()
 
 #hex = hex(ord("S"))
 
-result = 5.encode()
+result = "S".encode()
 
 #dataExport = struct.pack("c", hex)
 
-#dataExport = struct.pack(">c", result)
+dataExport = struct.pack(">c", result)
 
 b = bytes("S",'utf-8')
-
 
 
 #print(type(hex))
@@ -47,6 +46,6 @@ b = bytes("S",'utf-8')
 print(result)
 print(b)
 
-#print(dataExport)
+print(dataExport)
 #print(hex)
 
