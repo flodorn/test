@@ -34,7 +34,7 @@ hex = hex(ord("S"))
 
 #result = "S".encode()
 
-#dataExport = struct.pack(">ss", hex)
+dataExport = struct.pack("cccc", hex)
 
 #dataExport = struct.pack(">c", result)
 
@@ -44,6 +44,7 @@ hex = hex(ord("S"))
 
 print(type(hex))
 #print(result)
-#print(dataExport)
+
+print(dataExport)
 print(hex)
 
