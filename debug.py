@@ -38,12 +38,14 @@ result = "S".encode()
 
 #dataExport = struct.pack(">c", result)
 
-#b = bytes(data, 'utf-8')
+b = bytes("S")
 
 
 
-print(type(hex))
+#print(type(hex))
+
 print(result)
+print(b)
 
 #print(dataExport)
 #print(hex)
