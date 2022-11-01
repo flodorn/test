@@ -32,22 +32,21 @@ _logger = logging.getLogger()
 
 #hex = hex(ord("S"))
 char = "S"
-result = char.encode()
+#result = char.encode()
 
 #dataExport = struct.pack("c", hex)
 
 if (isinstance(char, str)):
     dataExport = struct.pack(">c", char.encode())
+else
+    dataExport = struct.pack(">B", char)
 
-b = bytes("S",'utf-8')
+#b = bytes("S",'utf-8')
 
 
-print(type(char))
-print(type(result))
-print(type(dataExport))
 
-print(result)
-print(b)
+#print(result)
+#print(b)
 
 print(dataExport)
 #print(hex)
