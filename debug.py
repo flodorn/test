@@ -31,7 +31,7 @@ _logger = logging.getLogger()
 
 
 #hex = hex(ord("S"))
-char = "S"
+char = "SI"
 #result = char.encode()
 
 #dataExport = struct.pack("c", hex)
