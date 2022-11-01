@@ -36,7 +36,7 @@ result = "S".encode()
 
 #dataExport = struct.pack("c", hex)
 
-dataExport = struct.pack("!c", result)
+dataExport = struct.pack("<c", result)
 
 b = bytes("S",'utf-8')
 
