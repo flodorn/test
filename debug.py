@@ -31,6 +31,6 @@ _logger = logging.getLogger()
 data="S"
 
 
-dataExport = data.encode()
+dataExport = data.encode("ascii")
 
 print(dataExport)
